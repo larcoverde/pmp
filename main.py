@@ -13,6 +13,9 @@ def get_opt():
     while True:
         try:
             opt = int(input("> "))
+            if opt not in [0, 1, 2]:
+                print("Select a valid number")
+                continue
             return opt
         except ValueError:
             print("Select a valid number")
@@ -20,7 +23,7 @@ def get_opt():
 def main():
     pg.init()
     print_main_menu()
-    get_opt()
+    opt = get_opt()
 
 if __name__ == "__main__":
     main()
