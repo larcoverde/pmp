@@ -7,6 +7,7 @@ def print_main_menu():
     print("Select an option: ")
     print("1 - Play a song")
     print("2 - Play a playlist")
+    print("0 - Exit")
 
 def get_opt():
     while True:
